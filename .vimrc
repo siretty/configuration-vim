@@ -3,7 +3,7 @@ execute pathogen#infect()
 
 """ configure syntax highlighting
   syntax on
-  colorscheme desert
+  "colorscheme graywh
 
 """ configure keys
   let mapleader = ","
