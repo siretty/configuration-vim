@@ -6,7 +6,15 @@ execute pathogen#infect()
   "colorscheme graywh
 
 """ configure keys
+  "" setting the leader key to something more convenient
   let mapleader = ","
+  "" configure movement through lines
+  map   <silent>  k         gk
+  map   <silent>  <Up>      gk
+  imap  <silent>  <Up>      <C-o>gk
+  map   <silent>  j         gj
+  map   <silent>  <Down>    gj
+  imap  <silent>  <Down>    <C-o>gj
 
 """ configure indentation
   "" setup default indent style
@@ -31,4 +39,6 @@ execute pathogen#infect()
 """ miscellaneous settings
   "" color a specific column as a guide how long your line is already
   set colorcolumn=78
+  "" highlight searches by default
+  set hlsearch
 
