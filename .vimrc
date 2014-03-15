@@ -9,18 +9,18 @@ execute pathogen#infect()
   "" setting the leader key to something more convenient
   let mapleader = ","
   "" configure movement through lines
-  map   <silent>  k         gk
-  map   <silent>  <Up>      gk
+  nmap  <silent>  k         gk
+  nmap  <silent>  <Up>      gk
   imap  <silent>  <Up>      <C-o>gk
-  map   <silent>  j         gj
-  map   <silent>  <Down>    gj
+  nmap  <silent>  j         gj
+  nmap  <silent>  <Down>    gj
   imap  <silent>  <Down>    <C-o>gj
 
 """ configure indentation
   "" setup default indent style
   " Note: I use 4 spaces of indentation, but set the tabstop to 2. This makes
   "       it easy to use smaller indents for alignments.
-  set expandtab shiftwidth=2 softtabstop=2
+  set expandtab shiftwidth=4 softtabstop=2
 
   "" default is to use "indent" mode for all filetypes
   filetype plugin indent on
