@@ -16,6 +16,11 @@ execute pathogen#infect()
   nmap  <silent>  <Down>    gj
   imap  <silent>  <Down>    <C-o>gj
 
+  nmap  <silent>  [1;5D   b
+  imap  <silent>  [1;5D   <C-o>b
+  nmap  <silent>  [1;5C   w
+  imap  <silent>  [1;5C   <C-o>w
+
   "" mappings for shift-up and -down
   set <PageUp>=[1;2A
   set <PageDown>=[1;2B
