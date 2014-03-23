@@ -16,6 +16,10 @@ execute pathogen#infect()
   nmap  <silent>  <Down>    gj
   imap  <silent>  <Down>    <C-o>gj
 
+  "" mappings for shift-up and -down
+  set <PageUp>=[1;2A
+  set <PageDown>=[1;2B
+
 """ configure indentation
   "" setup default indent style
   " Note: I use 4 spaces of indentation, but set the tabstop to 2. This makes
